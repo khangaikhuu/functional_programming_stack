@@ -1,0 +1,17 @@
+(lang dune 3.0)
+(name functional_web_app)
+(generate_opam_files true)
+
+(package
+ (name functional_web_app)
+ (synopsis "OCaml Web Application")
+ (description "A web application built with OCaml and Dream")
+ (depends
+  (ocaml (>= 4.14.0))
+  (dream (>= 1.0.0~alpha4))
+  (caqti-driver-postgresql (>= 1.9.0))
+  (caqti (>= 1.9.0))
+  (yojson (>= 2.1.0))
+  (ppx_deriving_yojson (>= 3.7.0))
+  (ppx_deriving (>= 5.2.1))
+  dune))
